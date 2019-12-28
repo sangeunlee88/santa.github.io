@@ -1,3 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-28T00:00:16+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Nomad Lab</title><subtitle>Main objective of this for my study and memory</subtitle><author><name>Santa</name></author><entry><title type="html">OS X관련 단축키 정리</title><link href="http://localhost:4000/workspace-for-os-x/" rel="alternate" type="text/html" title="OS X관련 단축키 정리" /><published>2019-12-27T00:00:00+09:00</published><updated>2019-12-27T00:00:00+09:00</updated><id>http://localhost:4000/workspace-for-os-x</id><content type="html" xml:base="http://localhost:4000/workspace-for-os-x/">&lt;h2 id=&quot;os-x-관련-단축키-정리&quot;&gt;OS X 관련 단축키 정리&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-28T18:08:36+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Nomad Lab</title><subtitle>Main objective of this for my study and memory</subtitle><author><name>Santa</name></author><entry><title type="html">Workspace For Os X</title><link href="http://localhost:4000/workspace-for-os-x/" rel="alternate" type="text/html" title="Workspace For Os X" /><published>2019-12-27T00:00:00+09:00</published><updated>2019-12-27T00:00:00+09:00</updated><id>http://localhost:4000/workspace-for-os-x</id><content type="html" xml:base="http://localhost:4000/workspace-for-os-x/">&lt;!-- ---
+title: &quot;OS X관련 단축키 정리&quot;
+categories:
+tags:
+data: &quot;2019-12-27 23:00&quot;
 
-&lt;p&gt;Command + Shift + g: 경로 입력창&lt;/p&gt;</content><author><name>Santa</name></author><summary type="html">OS X 관련 단축키 정리</summary></entry></feed>
+
+--- --&gt;
+
+&lt;h2 id=&quot;linux-command&quot;&gt;Linux Command&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;### alias을 이용한 단축기 설정법
+code ~/.zprofile 
+alias desk='cd ~/Desktop'
+alias cl='clear' 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;network&quot;&gt;Network&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;lsof -i:[Port No.] : 해당하는 Port와 관련된 프로세스 확인
+kill -9 [해당하는 PID No.] : o: -9 강제종료
+ssh -f lee -L [target port]:localhost:[local port] -N
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;github&quot;&gt;Github&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init
+git add .
+git commit -m &quot;initial commit&quot;
+git status
+git push origin master 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;anaconda&quot;&gt;AnaConda&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda remove -n [name] --all ### remove a [name] env.
+conda create -n [new name] --clone [old name] ### copy env.
+conda remove -n [old name] --all ### remove old one
+
+conda env list ### show env. list
+conda info --envs
+
+conda create -n [name] [install module] ### ex. conda create -n new python=3.4
+
+conda update conda 
+conda update --all
+conda activate [name] ### activate env.
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;os-x-관련-단축키-정리&quot;&gt;OS X 관련 단축키 정리&lt;/h2&gt;
+
+&lt;p&gt;Command + Shift + g : 경로 입력창 
+Command + Shift + h : 이전에 작성한 명령어 확인 (터미널)&lt;/p&gt;
+
+&lt;h3 id=&quot;githubio-홈페이지-관련&quot;&gt;github.io 홈페이지 관련&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Santa</name></author><summary type="html">&amp;lt;!– — title: “OS X관련 단축키 정리” categories: tags: data: “2019-12-27 23:00”</summary></entry></feed>

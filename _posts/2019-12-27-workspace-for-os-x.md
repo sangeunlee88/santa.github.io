@@ -25,7 +25,13 @@ ssh -f lee -L [target port]:localhost:[local port] -N
 
 ```
 ### Github 
-
+```
+git init
+git add .
+git commit -m "initial commit"
+git status
+git push origin master 
+```
 ### AnaConda 
 
 ```
@@ -49,10 +55,12 @@ conda activate [name] ### activate env.
 Command + Shift + g : 경로 입력창 
 Command + Shift + h : 이전에 작성한 명령어 확인 (터미널)
 
-### github.io 홈페이지 관련 
+## github.io 홈페이지 관련 
 
 ```
-
+bundle exec jekyll serve ### port 4000 으로 확인 가능 
 ```
+
+
 
 
