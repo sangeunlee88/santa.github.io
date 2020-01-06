@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-28T18:08:36+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Nomad Lab</title><subtitle>Main objective of this for my study and memory</subtitle><author><name>Santa</name></author><entry><title type="html">Workspace For Os X</title><link href="http://localhost:4000/workspace-for-os-x/" rel="alternate" type="text/html" title="Workspace For Os X" /><published>2019-12-27T00:00:00+09:00</published><updated>2019-12-27T00:00:00+09:00</updated><id>http://localhost:4000/workspace-for-os-x</id><content type="html" xml:base="http://localhost:4000/workspace-for-os-x/">&lt;!-- ---
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-06T10:52:24+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Nomad Lab</title><subtitle>Main objective of this for my study and memory</subtitle><author><name>Santa</name></author><entry><title type="html">Papers 0</title><link href="http://localhost:4000/papers-0/" rel="alternate" type="text/html" title="Papers 0" /><published>2020-01-04T00:00:00+09:00</published><updated>2020-01-04T00:00:00+09:00</updated><id>http://localhost:4000/papers-0</id><content type="html" xml:base="http://localhost:4000/papers-0/">&lt;h3 id=&quot;siclope-silhouette-based-clothed-people&quot;&gt;SiCloPe: Silhouette-Based Clothed People&lt;/h3&gt;
+
+&lt;p&gt;요약 
+ 3차원으로 사람을 표현하는 방법에 대한 복잡성을 줄이기 위해서 SCAPE과 SMPL같은 pose와 Shape의 파라메터를 이용하안 3차원 인간 모델이 소개 되었습니다. 그러나 이와같은 모델들은 낮은 차원의 파라메터를 통해서 3차원 사람을 표현하므로 옷을 입은 디테일을 표현의 모델을 위해서는 적합하지 않는다. 그랫거 템플릿 모델없이 티테일을 표현할수있는 방법을 제안한다.
+ 그방법은 한장의 사진으로부터 옷을 매우 정확한 옷을 입은 3차원 사람의 형태를 예측하기위해 특정한 뷰로부터 실루엣을 추론을 갖는 3차원 포즈 추정을 결합하는 방법&lt;/p&gt;
+
+&lt;p&gt;make n tractable : 다루기 쉽게하다
+high-fidelity 매우 정확한, 충실한&lt;/p&gt;
+
+&lt;h3 id=&quot;related-papaers&quot;&gt;related papaers&lt;/h3&gt;
+
+&lt;p&gt;Articulated Mesh Animation from Multi-view Silhouettes&lt;/p&gt;</content><author><name>Santa</name></author><summary type="html">SiCloPe: Silhouette-Based Clothed People</summary></entry><entry><title type="html">Torch</title><link href="http://localhost:4000/torch/" rel="alternate" type="text/html" title="Torch" /><published>2020-01-03T00:00:00+09:00</published><updated>2020-01-03T00:00:00+09:00</updated><id>http://localhost:4000/torch</id><content type="html" xml:base="http://localhost:4000/torch/">&lt;h3 id=&quot;torchtensor-작성과-기본동작&quot;&gt;torch.Tensor 작성과 기본동작&lt;/h3&gt;
+
+&lt;p&gt;torch.cat()&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;device = torch.device(&quot;cuda:0&quot;)
+
+x1 = torch.Tensor([[1, 1], [1, 1], [1, 1]]).to(self.device)
+x2 = torch.Tensor([[2, 2], [2, 2], [2, 2]]).to(self.device)
+x3 = torch.cat([x1, x2], dim = 0)
+x4 = torch.cat([x1, x2], dim = 1)
+print(x3.is_cuda)
+
+tensor([[1., 1.],
+        [1., 1.],
+        [1., 1.]], device='cuda:0')
+tensor([[2., 2.],
+        [2., 2.],
+        [2., 2.]], device='cuda:0')
+
+tensor([[1., 1.],
+        [1., 1.],
+        [1., 1.],
+        [2., 2.],
+        [2., 2.],
+        [2., 2.]], device='cuda:0')
+
+tensor([[1., 1., 2., 2.],
+        [1., 1., 2., 2.],
+        [1., 1., 2., 2.]], device='cuda:0')
+
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;x1 =&lt;/p&gt;</content><author><name>Santa</name></author><summary type="html">torch.Tensor 작성과 기본동작</summary></entry><entry><title type="html">Python</title><link href="http://localhost:4000/python/" rel="alternate" type="text/html" title="Python" /><published>2019-12-31T00:00:00+09:00</published><updated>2019-12-31T00:00:00+09:00</updated><id>http://localhost:4000/python</id><content type="html" xml:base="http://localhost:4000/python/">&lt;h3 id=&quot;scope-of-variable-in-class&quot;&gt;Scope of variable in class&lt;/h3&gt;
+
+&lt;p&gt;0&lt;strong&gt;variable&lt;/strong&gt; : public&lt;br /&gt;
+1__variable : private&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;public
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Test():
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;prevate&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Santa</name></author><summary type="html">Scope of variable in class</summary></entry><entry><title type="html">Workspace For Os X</title><link href="http://localhost:4000/workspace-for-os-x/" rel="alternate" type="text/html" title="Workspace For Os X" /><published>2019-12-27T00:00:00+09:00</published><updated>2019-12-27T00:00:00+09:00</updated><id>http://localhost:4000/workspace-for-os-x</id><content type="html" xml:base="http://localhost:4000/workspace-for-os-x/">&lt;!-- ---
 title: &quot;OS X관련 단축키 정리&quot;
 categories:
 tags:
@@ -13,6 +69,12 @@ data: &quot;2019-12-27 23:00&quot;
 code ~/.zprofile 
 alias desk='cd ~/Desktop'
 alias cl='clear' 
+
+df -h  현재남은 용량 확인
+
+la 
+las
+ 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;network&quot;&gt;Network&lt;/h3&gt;
@@ -48,10 +110,61 @@ conda activate [name] ### activate env.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h2 id=&quot;os-x-관련-단축키-정리&quot;&gt;OS X 관련 단축키 정리&lt;/h2&gt;
 
-&lt;p&gt;Command + Shift + g : 경로 입력창 
+&lt;p&gt;Command + Shift + g : 경로 입력창 &lt;br /&gt;
 Command + Shift + h : 이전에 작성한 명령어 확인 (터미널)&lt;/p&gt;
 
-&lt;h3 id=&quot;githubio-홈페이지-관련&quot;&gt;github.io 홈페이지 관련&lt;/h3&gt;
+&lt;h2 id=&quot;githubio-홈페이지-관련&quot;&gt;github.io 홈페이지 관련&lt;/h2&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle exec jekyll serve ### port 4000 으로 확인 가능 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;pip&quot;&gt;pip&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install [name] --upgrade ### upgrade package 
+
+pip install freeze 
+pip freeze &amp;gt; requirements.txt : Save installed packages
+pip install -r requirements.txt
+
+pip install --upgrade pip
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;docker&quot;&gt;Docker&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker commit [container name] [new image name] ### docker image 작성업 
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;vim&quot;&gt;Vim&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;w &amp;lt;-&amp;gt; b 단어단위
+e : 단어의 끝 마지막
+hjkl : 방향키
+^ 첫번째 문자
+0
+
+$ 문장끝
+
+문자 찾기
+
+f+:문자 , ;
+t+문자, ;(계속검색,정방향) , (역방향) 
+/(문자 검색) 소문자 n
+x: 삭제
+dd: 한문장 삭제  
+D 현재문장에서 끝까지
+J 위로 당겨주기
+p P 붙여넣기
+dj
+dj
+
+y 한줄 복사
+u 작업취소
+ctr r
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;PyCharm 리모트&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh -f (name) -L 5000(Localpy):localhost:22 -N
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Santa</name></author><summary type="html">&amp;lt;!– — title: “OS X관련 단축키 정리” categories: tags: data: “2019-12-27 23:00”</summary></entry></feed>

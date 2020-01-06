@@ -1,4 +1,4 @@
-I"<!-- ---
+I"9<!-- ---
 title: "OS X관련 단축키 정리"
 categories:
 tags:
@@ -13,6 +13,12 @@ data: "2019-12-27 23:00"
 code ~/.zprofile 
 alias desk='cd ~/Desktop'
 alias cl='clear' 
+
+df -h  현재남은 용량 확인
+
+la 
+las
+ 
 </code></pre></div></div>
 
 <h3 id="network">Network</h3>
@@ -48,12 +54,63 @@ conda activate [name] ### activate env.
 </code></pre></div></div>
 <h2 id="os-x-관련-단축키-정리">OS X 관련 단축키 정리</h2>
 
-<p>Command + Shift + g : 경로 입력창 
+<p>Command + Shift + g : 경로 입력창 <br />
 Command + Shift + h : 이전에 작성한 명령어 확인 (터미널)</p>
 
-<h3 id="githubio-홈페이지-관련">github.io 홈페이지 관련</h3>
+<h2 id="githubio-홈페이지-관련">github.io 홈페이지 관련</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve ### port 4000 으로 확인 가능 
+</code></pre></div></div>
+
+<h2 id="pip">pip</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install [name] --upgrade ### upgrade package 
+
+pip install freeze 
+pip freeze &gt; requirements.txt : Save installed packages
+pip install -r requirements.txt
+
+pip install --upgrade pip
+
+</code></pre></div></div>
+
+<h2 id="docker">Docker</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker commit [container name] [new image name] ### docker image 작성업 
+
+</code></pre></div></div>
+
+<h2 id="vim">Vim</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>w &lt;-&gt; b 단어단위
+e : 단어의 끝 마지막
+hjkl : 방향키
+^ 첫번째 문자
+0
+
+$ 문장끝
+
+문자 찾기
+
+f+:문자 , ;
+t+문자, ;(계속검색,정방향) , (역방향) 
+/(문자 검색) 소문자 n
+x: 삭제
+dd: 한문장 삭제  
+D 현재문장에서 끝까지
+J 위로 당겨주기
+p P 붙여넣기
+dj
+dj
+
+y 한줄 복사
+u 작업취소
+ctr r
+
+</code></pre></div></div>
+
+<p>PyCharm 리모트</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh -f (name) -L 5000(Localpy):localhost:22 -N
 </code></pre></div></div>
 
 :ET

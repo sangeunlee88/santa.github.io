@@ -1,0 +1,13 @@
+I"<h3 id="siclope-silhouette-based-clothed-people">SiCloPe: Silhouette-Based Clothed People</h3>
+
+<p>요약 
+ 3차원으로 사람을 표현하는 방법에 대한 복잡성을 줄이기 위해서 SCAPE과 SMPL같은 pose와 Shape의 파라메터를 이용하안 3차원 인간 모델이 소개 되었습니다. 그러나 이와같은 모델들은 낮은 차원의 파라메터를 통해서 3차원 사람을 표현하므로 옷을 입은 디테일을 표현의 모델을 위해서는 적합하지 않는다. 그랫거 템플릿 모델없이 티테일을 표현할수있는 방법을 제안한다.
+ 그방법은 한장의 사진으로부터 옷을 매우 정확한 옷을 입은 3차원 사람의 형태를 예측하기위해 특정한 뷰로부터 실루엣을 추론을 갖는 3차원 포즈 추정을 결합하는 방법</p>
+
+<p>make n tractable : 다루기 쉽게하다
+high-fidelity 매우 정확한, 충실한</p>
+
+<h3 id="related-papaers">related papaers</h3>
+
+<p>Articulated Mesh Animation from Multi-view Silhouettes</p>
+:ET

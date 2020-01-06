@@ -1,0 +1,15 @@
+I"E<h3 id="scope-of-variable-in-class">Scope of variable in class</h3>
+
+<p>0<strong>variable</strong> : public<br />
+1__variable : private</p>
+
+<ol>
+  <li>public
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Test():
+
+</code></pre></div>    </div>
+  </li>
+  <li>prevate</li>
+</ol>
+
+:ET
